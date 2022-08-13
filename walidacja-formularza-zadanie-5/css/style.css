@@ -1,0 +1,104 @@
+body {
+    /* background-color: rgb(181, 181, 255); */
+    background: linear-gradient(-45deg, rgb(67, 67, 208), rgb(46, 255, 91), rgb(255, 255, 78));
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    animation-name: gradient;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: block;
+    text-align: center;
+    list-style: inside;
+}
+
+#wrapper-frame {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 30px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 98%;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    background-color: transparent;
+    color: #fff;
+    outline-width: 1px;
+    outline-color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    height: 10px;
+    margin-top: 10px;
+    accent-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: white;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    font-size: 12px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 22px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, 0.2);
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+
+label {
+    display: inline-block;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
